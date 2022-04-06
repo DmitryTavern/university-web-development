@@ -81,6 +81,7 @@ body {
   margin-top: -40px;
 
   &__block {
+    max-width: 750px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -97,22 +98,17 @@ body {
 }
 
 .main-knowledge {
-  &__table {
-    width: 62%;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-
-    td {
-      width: 20%;
-      height: 1px; // Fix bug with table
-      padding-left: 24px;
-      padding-right: 24px;
-    }
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &__block {
-    height: 100%;
     padding: 30px 10px 30px;
 
     h2 {
